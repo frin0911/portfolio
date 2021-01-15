@@ -1,0 +1,428 @@
+@font-face {
+    font-family: 'Jal_Onuel';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KOTRA_BOLD';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KOTRA_GOTHIC';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "KoPubWorld";
+    src: url("../../src/font/KoPubWorld.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "KoPubBold";
+    src: url("../../src/font/KoPubBold.ttf") format("truetype");
+}
+
+body {
+    font-family: Y_Spotlight, sans-serif;
+    background-color: black;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+header {
+    position: fixed;
+    font-family: KoPubWorld, sans-serif;
+    font-size: 18px;
+    z-index: 1;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+header > div {
+    margin-top: 10px;
+}
+
+header > div > a {
+    margin-left: 30px;
+    transition: 0.5s;
+    color: white;
+    text-decoration: none;
+}
+
+header > div > a:hover {
+    color: gray;
+    transition: 0.5s;
+}
+
+/*Home*/
+h1 {
+    font-family: Y_Spotlight, sans-serif;
+    font-size: 60px;
+    z-index: 1;
+}
+
+h2 {
+    font-family: Jal_Onuel, sans-serif;
+    font-size: 20px;
+    margin-top: -40px;
+    z-index: 1;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    color: #fff;
+    position: relative;
+    background-color: black;
+}
+
+#sns > a:nth-child(1) {
+    float: left;
+    margin-right: 5px;
+}
+
+#sns {
+    z-index: 1;
+    margin-top: -40px !important;
+}
+
+#sns > a > img {
+    width: 23px;
+}
+
+#sns > a:nth-child(2) {
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#sns > a > img, #sns > a > i {
+    transition: 0.4s;
+}
+
+#sns > a > img:hover, #sns > a > i:hover {
+    opacity: 60%;
+    transition: 0.4s;
+}
+
+/*Abilities*/
+h3 {
+    font-family: BMDOHYEON, sans-serif;
+    font-size: 50px;
+    margin-top: -450px;
+}
+
+h4 {
+    font-family: Jal_Onuel, sans-serif;
+    font-size: 22px;
+    top: 140px;
+    position: absolute;
+}
+
+h4.second-row {
+    top: 320px;
+}
+
+h4.third-row {
+    top: 480px;
+}
+
+.logo-wrapper {
+    top: 200px;
+    text-align: center;
+    position: absolute;
+}
+
+.logo {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    float: left;
+    transition: 0.4s;
+}
+
+.logo:hover {
+    transition: 0.4s;
+    opacity: 60%;
+}
+
+.second-row {
+    top: 380px;
+}
+
+.third-row {
+    top: 540px;
+}
+
+/*Projects*/
+.box-wrapper {
+    position: absolute;
+    top: 300px;
+}
+
+.box {
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    background-color: black;
+    border: white 3px solid;
+    border-radius: 14px;
+    transition: 0.2s;
+}
+
+.box:hover {
+    margin-top: -10px;
+    transition: 0.2s;
+}
+
+.box > div {
+    padding: 20px 10px;
+}
+
+.box > img {
+    padding-top: 3px;
+    margin-bottom: 5px;
+}
+
+#aqua {
+    border-radius: 15px;
+}
+
+.inbox-text {
+    font-family: KOTRA_GOTHIC, sans-serif;
+    margin-top: -16px;
+    text-align: center;
+}
+
+#hyphen-bot {
+    color: #1b8fe0;
+    font-size: 30px;
+    font-family: BMDOHYEON, sans-serif;
+    font-style: italic;
+    text-decoration: none;
+}
+
+/*Projects*/
+.contact-wrapper {
+    width: 70%;
+    text-align: left;
+    line-height: 15px;
+}
+
+.determinant {
+    visibility: hidden;
+}
+
+.contact > i {
+    float: left;
+    font-size: 23px;
+    color: white;
+}
+
+.contact > a {
+    float: left;
+    margin-top: 3px;
+    margin-left: 8px;
+    font-family: Jal_Onuel, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.contact > a > b {
+    transition: 0.3s;
+    font-weight: 100;
+}
+
+.contact > a > b:hover {
+    opacity: 60%;
+    transition: 0.3s;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #202020;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+footer > div {
+    margin-top: 100px;
+}
+
+footer > div > a {
+    font-family: KoPubWorld, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.anchors {
+    display: none;
+    position: fixed;
+    top: 25px;
+    right: 50px;
+    z-index: 100;
+}
+
+.anchors ul {
+    margin: 0;
+    padding: 0;
+}
+
+.anchors ul li {
+    float: left;
+    list-style: none;
+}
+
+.anchors ul li a {
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    position: absolute;
+}
+
+nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a span {
+    background: #fff;
+}
+
+nav li {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 16px;
+    position: relative;
+}
+
+nav span:after {
+    background: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    content: "";
+    display: block;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+nav li .active span {
+    background: #fff;
+    position: absolute;
+}
+
+nav li .active span:after {
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav ul li a.active span,
+nav ul li:hover a.active span {
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+}
+
+nav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    transition: all 0.1s ease-in-out;
+}
+
+nav ul li:hover a span {
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 -5px;
+}
+
